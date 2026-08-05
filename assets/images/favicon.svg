@@ -1,6 +1,1 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="100" height="100" rx="25" fill="#111111"></rect>
-<path d="M50 20C35 35 25 45 25 60C25 75 36 85 50 85C64 85 75 75 75 60C75 45 65 35 50 20Z" fill="#B8945E"></path>
-<path d="M50 35V75" stroke="#111111" stroke-width="3"></path>
-<path d="M35 55H65" stroke="#111111" stroke-width="3"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none"><rect width="100" height="100" fill="#111" rx="25"/><path fill="#B8945E" d="M50 20C35 35 25 45 25 60s11 25 25 25 25-10 25-25-10-25-25-40"/><path stroke="#111" stroke-width="3" d="M50 35v40M35 55h30"/></svg>

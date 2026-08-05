@@ -129,3 +129,8 @@ submitButton.textContent=originalText;
 window.addEventListener("error",(e)=>{
 console.warn("Site error:",e.message);
 });
+document.querySelectorAll("img").forEach(img=>{
+img.addEventListener("load",()=>{
+img.classList.add("loaded");
+});
+});
