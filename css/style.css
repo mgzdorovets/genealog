@@ -69,8 +69,8 @@ left:0;
 width:100%;
 z-index:100;
 padding:25px 0;
-background:rgba(10,10,10,.35);
-backdrop-filter:blur(12px);
+background:rgba(15,15,15,.25);
+backdrop-filter:blur(14px);
 border-bottom:1px solid rgba(255,255,255,.08);
 transition:.5s;
 }
@@ -79,13 +79,23 @@ transition:.5s;
     align-items:center;
     justify-content:space-between;
 }
-.logo {
-    font-family:var(--font-title);
-    font-size:34px;
-    font-weight:600;
+.header .button{
+background:var(--gold);
+color:#111;
+padding:15px 30px;
 }
-.logo span {
-    color:var(--gold);
+.header .button:hover{
+background:#d8bd91;
+}
+.logo{
+font-family:var(--font-title);
+font-size:36px;
+font-weight:600;
+color:#fff;
+letter-spacing:.5px;
+}
+.logo span{
+color:var(--gold);
 }
 .nav {
     display:flex;
@@ -832,4 +842,13 @@ color:#111;
 font-size:12px;
 line-height:1.6;
 color:#777;
+}
+body:before{
+content:"";
+position:fixed;
+inset:0;
+background:url("../assets/images/noise.png");
+opacity:.035;
+pointer-events:none;
+z-index:999;
 }
