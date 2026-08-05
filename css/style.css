@@ -697,3 +697,45 @@ color:var(--gold);
 font-family:var(--font-title);
 font-size:35px;
 }
+.reviews{
+background:#f7f5f0;
+}
+.reviews h2{
+font-family:var(--font-title);
+font-size:80px;
+line-height:1;
+max-width:800px;
+margin-bottom:80px;
+}
+.reviews__grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+.review{
+background:white;
+padding:45px;
+border-radius:35px;
+box-shadow:var(--shadow);
+position:relative;
+transition:var(--transition);
+}
+.review:hover{
+transform:translateY(-12px);
+}
+.review__mark{
+font-family:var(--font-title);
+font-size:90px;
+line-height:.7;
+color:var(--gold);
+}
+.review p{
+font-size:17px;
+line-height:1.9;
+color:#555;
+margin:30px 0;
+}
+.review span{
+color:var(--gold);
+font-weight:600;
+}
