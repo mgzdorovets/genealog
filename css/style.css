@@ -500,3 +500,49 @@ background:#ddd;
 .reveal-image{
 overflow:hidden;
 }
+.journey{
+background:#111;
+color:white;
+overflow:hidden;
+}
+.journey h2{
+font-family:var(--font-title);
+font-size:80px;
+line-height:1;
+max-width:900px;
+margin-bottom:80px;
+}
+.journey__track{
+display:flex;
+gap:40px;
+width:max-content;
+}
+.journey__item{
+width:380px;
+min-height:420px;
+padding:45px;
+border-radius:40px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.12);
+transition:var(--transition);
+}
+.journey__item:hover{
+transform:translateY(-15px);
+border-color:var(--gold);
+}
+.journey__number{
+font-family:var(--font-title);
+font-size:80px;
+color:var(--gold);
+margin-bottom:40px;
+}
+.journey__item h3{
+font-family:var(--font-title);
+font-size:40px;
+margin-bottom:20px;
+}
+.journey__item p{
+color:#bbb;
+line-height:1.8;
+font-size:17px;
+}

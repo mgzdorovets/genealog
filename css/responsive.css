@@ -51,3 +51,16 @@ section{padding:90px 0}
 .intro h2{font-size:40px}
 .contacts h2{font-size:38px}
 }
+@media(max-width:700px){
+.journey h2{
+font-size:45px;
+}
+.journey__track{
+display:grid;
+width:100%;
+}
+.journey__item{
+width:100%;
+min-height:auto;
+}
+}
