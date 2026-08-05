@@ -54,9 +54,18 @@ scrub:true
 }
 });
 gsap.utils.toArray("section").forEach(section=>{
-const elements=section.querySelectorAll(
-"h2,p,.card,.timeline__item,.stats div"
-);
+let selector="h2,p,.timeline__item,.stats div";
+
+if(section.matches(".family-tree,#research")){
+selector=":scope > .container > h2,:scope > .container > .subtitle";
+}
+
+const elements=section.querySelectorAll(selector);
+
+if(!elements.length){
+return;
+}
+
 gsap.from(elements,{
 opacity:0,
 y:60,
@@ -130,7 +139,12 @@ window.addEventListener("error",(e)=>{
 console.warn("Site error:",e.message);
 });
 document.querySelectorAll("img").forEach(img=>{
+if(img.complete && img.naturalWidth>0){
+img.classList.add("loaded");
+return;
+}
+
 img.addEventListener("load",()=>{
 img.classList.add("loaded");
-});
+},{once:true});
 });
