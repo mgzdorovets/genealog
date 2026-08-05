@@ -1,0 +1,46 @@
+:root {
+
+    /* COLORS */
+
+    --bg: #f7f5f0;
+    --bg-dark: #111111;
+
+    --white: #ffffff;
+    --black: #151515;
+
+    --text: #444444;
+    --text-light: #8a8a8a;
+
+    --gold: #b8945e;
+    --gold-light: #d8bd91;
+
+
+    /* TYPOGRAPHY */
+
+    --font-title: "Cormorant Garamond", serif;
+    --font-main: "Manrope", sans-serif;
+
+
+    /* SIZES */
+
+    --container: 1240px;
+
+    --radius-small: 16px;
+    --radius: 32px;
+    --radius-big: 50px;
+
+
+    /* ANIMATION */
+
+    --transition:
+    .5s cubic-bezier(.22,1,.36,1);
+
+
+    /* SHADOW */
+
+    --shadow:
+
+    0 30px 80px rgba(0,0,0,.08);
+
+
+}

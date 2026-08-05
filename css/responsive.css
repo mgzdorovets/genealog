@@ -1,0 +1,53 @@
+@media(max-width:1100px){
+.container{width:min(92%,700px)}
+.nav{display:none}
+.header .button{display:none}
+.menu{display:flex;flex-direction:column;gap:8px;cursor:pointer}
+.menu span{width:30px;height:2px;background:white;display:block}
+.hero{min-height:900px;height:auto;padding:180px 0 120px}
+.hero__container{flex-direction:column;align-items:flex-start}
+.hero h1{font-size:70px}
+.hero__card{margin-top:40px}
+.about__grid{grid-template-columns:1fr;gap:50px}
+.photo-placeholder{height:500px;font-size:55px}
+.about h2,.research h2,.process h2{font-size:60px}
+.cards{grid-template-columns:1fr}
+.timeline{grid-template-columns:1fr;gap:70px}
+.timeline::before{display:none}
+.timeline__item{padding-top:0;padding-left:110px}
+.timeline__item span{left:0;top:0}
+.contacts h2{font-size:65px}
+}
+@media(max-width:700px){
+section{padding:90px 0}
+.container{width:90%}
+.logo{font-size:28px}
+.hero{padding-top:140px}
+.hero h1{font-size:48px;line-height:1}
+.hero__description{font-size:17px}
+.hero__buttons{flex-direction:column;align-items:flex-start}
+.button{padding:16px 28px}
+.hero__card{width:100%;padding:35px}
+.hero__number{font-size:70px}
+.intro h2{font-size:48px}
+.intro p:last-child{font-size:17px}
+.about h2,.research h2,.process h2{font-size:45px}
+.photo-placeholder{height:380px;font-size:42px}
+.stats{flex-direction:column;gap:25px}
+.stats strong{font-size:48px}
+.card{padding:35px;min-height:auto}
+.card h3{font-size:32px}
+.timeline__item{padding-left:90px}
+.timeline__item h3{font-size:34px}
+.contacts__box{padding:60px 25px}
+.contacts h2{font-size:45px}
+.loader__text{font-size:34px}
+.cursor{display:none}
+}
+@media(max-width:400px){
+.hero h1{font-size:40px}
+.logo{font-size:24px}
+.subtitle{letter-spacing:3px}
+.intro h2{font-size:40px}
+.contacts h2{font-size:38px}
+}
