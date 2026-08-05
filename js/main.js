@@ -126,3 +126,6 @@ submitButton.textContent=originalText;
 },1800);
 });
 }
+window.addEventListener("error",(e)=>{
+console.warn("Site error:",e.message);
+});
