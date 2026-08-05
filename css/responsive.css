@@ -104,3 +104,20 @@ grid-template-columns:1fr;
 padding:35px;
 }
 }
+@media(max-width:900px){
+.contacts__grid{
+grid-template-columns:1fr;
+gap:60px;
+}
+}
+@media(max-width:700px){
+.contacts__content h2{
+font-size:45px;
+}
+.contacts__links a{
+font-size:25px;
+}
+.contact-form{
+padding:30px 22px;
+}
+}

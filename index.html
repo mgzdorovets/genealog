@@ -424,18 +424,33 @@ XX век
 </div>
 </section>
 <section id="contacts" class="contacts">
-<div class="container">
-<div class="contacts__box">
-<p class="subtitle">
-НАЧАТЬ
-</p>
-<h2>
-Расскажите о своей семье
-</h2>
-<a href="#" class="button">
-Связаться
-</a>
+<div class="container contacts__grid">
+<div class="contacts__content">
+<p class="subtitle">НАЧАТЬ ИССЛЕДОВАНИЕ</p>
+<h2>Ваша семейная история начинается с одного разговора</h2>
+<p>Расскажите, что уже известно о ваших предках. Даже одно имя, фотография или место рождения могут стать началом большого исследования.</p>
+<div class="contacts__links">
+<a href="tel:+79617122112">+7 961 712 21 12</a>
+<a href="#">Telegram</a>
+<a href="#">WhatsApp</a>
 </div>
+</div>
+<form class="contact-form">
+<label>
+<span>Ваше имя</span>
+<input type="text" name="name" placeholder="Введите имя" required>
+</label>
+<label>
+<span>Телефон</span>
+<input type="tel" name="phone" placeholder="+7 999 000 00 00" required>
+</label>
+<label>
+<span>Что вы хотите узнать?</span>
+<textarea name="message" placeholder="Расскажите немного о своей семье"></textarea>
+</label>
+<button type="submit" class="button">Отправить заявку</button>
+<p class="contact-form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+</form>
 </div>
 </section>
 </main>
