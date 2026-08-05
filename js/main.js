@@ -20,11 +20,12 @@ document.querySelector(".loader").style.display="none";
 });
 const header=document.querySelector(".header");
 window.addEventListener("scroll",()=>{
-if(window.scrollY>80){
-header.style.background="rgba(10,10,10,.75)";
-header.style.backdropFilter="blur(15px)";
+if(window.scrollY>100){
+header.style.background="rgba(10,10,10,.85)";
+header.style.padding="15px 0";
 }else{
-header.style.background="transparent";
+header.style.background="rgba(10,10,10,.35)";
+header.style.padding="25px 0";
 }
 });
 gsap.from(".hero__content > *",{
