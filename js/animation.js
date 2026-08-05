@@ -1,3 +1,9 @@
+gsap.set(
+"h1,h2,.about__photo,.card,.timeline__item,.contacts__box",
+{
+opacity:1
+}
+);
 gsap.registerPlugin(ScrollTrigger);
 const revealItems=document.querySelectorAll(
 ".about__photo,.card,.timeline__item,.contacts__box"
@@ -20,8 +26,8 @@ const titles=document.querySelectorAll(
 );
 titles.forEach(title=>{
 gsap.from(title,{
-opacity:0,
-y:100,
+opacity:1,
+y:0,
 duration:1.4,
 ease:"power4.out",
 scrollTrigger:{
