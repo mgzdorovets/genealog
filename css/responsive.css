@@ -77,3 +77,19 @@ flex-direction:column;
 height:350px;
 }
 }
+@media(max-width:700px){
+.book__grid{
+grid-template-columns:1fr;
+gap:60px;
+}
+.book__cover{
+width:280px;
+height:420px;
+}
+.book__title{
+font-size:40px;
+}
+.book__content h2{
+font-size:45px;
+}
+}
