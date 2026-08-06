@@ -44,13 +44,15 @@ delay:1,
 ease:"power3.out"
 });
 gsap.to(".hero__image",{
-scale:1,
-yPercent:15,
+yPercent:10,
+force3D:true,
+ease:"none",
 scrollTrigger:{
 trigger:".hero",
 start:"top top",
 end:"bottom top",
-scrub:true
+scrub:.5,
+invalidateOnRefresh:true
 }
 });
 gsap.utils.toArray("section").forEach(section=>{

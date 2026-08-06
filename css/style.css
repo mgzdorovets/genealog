@@ -151,19 +151,19 @@ HERO
 }
 .hero__image{
 position:absolute;
-inset:0;
+inset:-14% 0;
 background:
 url("../assets/images/hero.jpg")
 center/cover no-repeat;
-transform:scale(1.12);
+transform:translate3d(0,0,0) scale(1.04);
+transform-origin:center;
+backface-visibility:hidden;
+pointer-events:none;
+will-change:transform;
 filter:
 sepia(.18)
 contrast(1.05)
 brightness(.85);
-}
-.hero:hover .hero__image{
-transform:scale(1.05);
-transition:8s cubic-bezier(.2,.8,.2,1);
 }
 .hero__overlay{
 position:absolute;
